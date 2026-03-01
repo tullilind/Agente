@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Login - Meu Agente IA</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Nunito', sans-serif; user-select: none; }
+        body { background-color: #f0f4f8; color: #333; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; }
+        
+        .card { background-color: #ffffff; border-radius: 24px; padding: 40px 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); width: 100%; max-width: 400px; text-align: center; }
+        .logo-area { margin-bottom: 30px; }
+        .logo-area span { font-size: 80px; color: #00C853; }
+        .logo-area h1 { font-size: 32px; font-weight: 900; color: #2c3e50; }
+
+        .input-group { position: relative; margin-bottom: 15px; width: 100%; }
+        .input-group span { position: absolute; left: 15px; top: 15px; color: #a0aec0; }
+        .input-group input { width: 100%; padding: 15px 15px 15px 50px; background-color: #f7fafc; border: 2px solid #edf2f7; border-radius: 16px; font-size: 16px; outline: none; transition: 0.3s; font-weight: 700; color: #2d3748; }
+        .input-group input:focus { border-color: #00C853; background-color: #fff; }
+
+        .btn { width: 100%; padding: 16px; border: none; border-radius: 16px; font-size: 18px; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.2s; }
+        .btn-primary { background-color: #00C853; color: white; margin-bottom: 10px; box-shadow: 0 6px 0 #009624; }
+        .btn-primary:active { transform: translateY(6px); box-shadow: 0 0 0 #009624; }
+        .btn-secondary { background-color: transparent; color: #00C853; border: 2px solid #00C853; }
+    </style>
+</head>
+<body id="pagina-login">
+
+    <div class="card">
+        <div class="logo-area">
+            <span class="material-symbols-outlined">extension</span>
+            <h1>Meu Agente</h1>
+        </div>
+        <div class="input-group">
+            <span class="material-symbols-outlined">person</span>
+            <input type="text" id="input-user" placeholder="Seu nome">
+        </div>
+        <div class="input-group">
+            <span class="material-symbols-outlined">lock</span>
+            <input type="password" id="input-pass" placeholder="Sua senha secreta">
+        </div>
+        <button id="btn-logar" class="btn btn-primary">Entrar para Brincar</button>
+        <button id="btn-registrar" class="btn btn-secondary">Criar Perfil</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
