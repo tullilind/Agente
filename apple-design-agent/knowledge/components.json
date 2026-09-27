@@ -1,0 +1,78 @@
+{
+  "components": [
+    {
+      "name": "PrimaryButton",
+      "role": "primary-action",
+      "states": ["default", "hover", "pressed", "focus", "disabled", "loading"],
+      "rules": ["usar rótulo orientado a ação", "não competir com outra ação primária", "alvo de toque acessível"]
+    },
+    {
+      "name": "SecondaryButton",
+      "role": "secondary-action",
+      "states": ["default", "hover", "pressed", "focus", "disabled"]
+    },
+    {
+      "name": "Toolbar",
+      "role": "context-actions",
+      "rules": ["agrupar ações relacionadas", "reduzir ruído visual", "manter contraste sobre conteúdo"]
+    },
+    {
+      "name": "Sidebar",
+      "role": "primary-navigation",
+      "bestFor": ["macOS", "iPadOS", "web-desktop"],
+      "rules": ["itens curtos", "seleção persistente", "colapsável quando largura reduzir"]
+    },
+    {
+      "name": "TabBar",
+      "role": "top-level-navigation",
+      "bestFor": ["iOS", "iPadOS"],
+      "rules": ["poucas seções principais", "ícone + rótulo quando útil", "não usar para ações"]
+    },
+    {
+      "name": "NavigationBar",
+      "role": "screen-context",
+      "rules": ["título claro", "ações contextuais discretas", "evitar excesso de botões"]
+    },
+    {
+      "name": "Card",
+      "role": "content-group",
+      "rules": ["usar somente quando agrupamento for real", "evitar card dentro de card sem necessidade"]
+    },
+    {
+      "name": "ListRow",
+      "role": "structured-content",
+      "rules": ["alinhamento previsível", "hierarquia tipográfica", "estado selecionado quando aplicável"]
+    },
+    {
+      "name": "TextField",
+      "role": "text-input",
+      "states": ["default", "focus", "filled", "error", "disabled"],
+      "rules": ["rótulo persistente ou contexto inequívoco", "erro descritivo", "foco visível"]
+    },
+    {
+      "name": "SearchField",
+      "role": "search",
+      "rules": ["placeholder curto", "ação de limpar", "resultado e vazio bem definidos"]
+    },
+    {
+      "name": "Toggle",
+      "role": "binary-setting",
+      "rules": ["rótulo descreve a configuração", "não usar texto On/Off como único significado"]
+    },
+    {
+      "name": "Sheet",
+      "role": "temporary-task",
+      "rules": ["uma tarefa coesa", "fechamento previsível", "não esconder fluxo crítico sem motivo"]
+    },
+    {
+      "name": "Alert",
+      "role": "important-interruption",
+      "rules": ["usar com parcimônia", "título objetivo", "ação destrutiva claramente diferenciada"]
+    },
+    {
+      "name": "EmptyState",
+      "role": "no-content",
+      "rules": ["explicar o estado", "oferecer próximo passo útil", "evitar ilustração sem função"]
+    }
+  ]
+}
