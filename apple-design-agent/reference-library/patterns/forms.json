@@ -1,0 +1,25 @@
+{
+  "category": "forms",
+  "rules": [
+    "Agrupe campos por intenção, não apenas por tipo.",
+    "Use rótulos claros e persistentes quando o contexto puder desaparecer.",
+    "Mostre erro próximo ao campo e explique como corrigir.",
+    "Evite exigir informação que possa ser inferida ou preenchida automaticamente.",
+    "Use uma ação primária clara ao final da tarefa.",
+    "Campos e botões de toque devem preservar área acionável de pelo menos 44x44pt.",
+    "Nunca use apenas vermelho/verde para comunicar sucesso ou erro."
+  ],
+  "fieldStates": [
+    "default",
+    "hover",
+    "focus",
+    "filled",
+    "invalid",
+    "disabled",
+    "read-only"
+  ],
+  "layouts": {
+    "mobile": "uma coluna, agrupamento vertical, ação primária próxima ao final",
+    "desktop": "uma ou duas colunas somente quando a relação entre campos for óbvia"
+  }
+}
