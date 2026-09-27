@@ -1,6 +1,6 @@
 {
   "id": "atlas.apple-reference-library",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "updatedAt": "2026-09-27",
   "locale": "pt-BR",
   "targetPlatforms": [
@@ -19,6 +19,11 @@
   },
   "officialSources": [
     {
+      "name": "Apple Design",
+      "url": "https://developer.apple.com/design/",
+      "priority": 1
+    },
+    {
       "name": "Apple Human Interface Guidelines",
       "url": "https://developer.apple.com/design/human-interface-guidelines/",
       "priority": 1
@@ -29,18 +34,38 @@
       "priority": 1
     },
     {
+      "name": "Apple Design Pathway",
+      "url": "https://developer.apple.com/design/get-started/",
+      "priority": 1
+    },
+    {
+      "name": "Apple Design Videos",
+      "url": "https://developer.apple.com/videos/design/",
+      "priority": 1
+    },
+    {
+      "name": "Apple Design Awards 2026",
+      "url": "https://developer.apple.com/design/awards/",
+      "priority": 1
+    },
+    {
       "name": "Apple Layout HIG",
       "url": "https://developer.apple.com/design/human-interface-guidelines/layout",
       "priority": 1
     },
     {
-      "name": "Apple Liquid Glass",
-      "url": "https://developer.apple.com/documentation/technologyoverviews/liquid-glass",
+      "name": "Apple Materials HIG",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/materials",
       "priority": 1
     },
     {
-      "name": "Apple UI Design Tips",
-      "url": "https://developer.apple.com/design/tips/",
+      "name": "Apple Accessibility HIG",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "priority": 1
+    },
+    {
+      "name": "SF Symbols",
+      "url": "https://developer.apple.com/sf-symbols/",
       "priority": 1
     }
   ],
@@ -61,11 +86,29 @@
     }
   ],
   "modules": [
+    "official/hig-catalog.json",
+    "official/design-principles-2026.json",
+    "official/design-resources-2026.json",
+    "official/real-apple-examples.json",
+    "official/apple-design-awards-2026.json",
+    "official/design-videos.json",
     "tokens/semantic-tokens.json",
     "patterns/navigation.json",
     "patterns/forms.json",
     "patterns/dashboards.json",
     "patterns/liquid-glass.json",
     "patterns/states-accessibility.json"
-  ]
+  ],
+  "authorityOrder": [
+    "official-apple",
+    "atlas-derived",
+    "community"
+  ],
+  "usagePolicy": {
+    "preferOfficialApple": true,
+    "citeSourceUrlsInGeneratedSpecs": true,
+    "doNotCloneAppleScreens": true,
+    "doNotRedistributeProprietaryAssets": true,
+    "useExamplesForPrinciplesNotPixelCopy": true
+  }
 }
