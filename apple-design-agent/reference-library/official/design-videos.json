@@ -1,0 +1,143 @@
+{
+  "updatedAt": "2026-09-27",
+  "authority": "official-apple",
+  "indexUrl": "https://developer.apple.com/videos/design/",
+  "videos": [
+    {
+      "title": "Principles of great design",
+      "year": 2026,
+      "url": "https://developer.apple.com/videos/play/wwdc2026/250/",
+      "chapters": [
+        "Purpose",
+        "Agency",
+        "Responsibility",
+        "Familiarity",
+        "Flexibility",
+        "Simplicity",
+        "Craft",
+        "Delight"
+      ],
+      "useFor": [
+        "product principles",
+        "design review",
+        "feature prioritization"
+      ]
+    },
+    {
+      "title": "Design intuitive search experiences",
+      "year": 2026,
+      "url": "https://developer.apple.com/videos/",
+      "useFor": [
+        "search",
+        "discovery",
+        "filtering",
+        "information retrieval"
+      ]
+    },
+    {
+      "title": "Craft clear names for features and labels in your app",
+      "year": 2026,
+      "url": "https://developer.apple.com/videos/",
+      "useFor": [
+        "UX writing",
+        "labels",
+        "menus",
+        "settings"
+      ]
+    },
+    {
+      "title": "Meet Liquid Glass",
+      "year": 2025,
+      "url": "https://developer.apple.com/videos/play/wwdc2025/219/",
+      "chapters": [
+        "Dynamics",
+        "Adaptivity",
+        "Principles"
+      ],
+      "useFor": [
+        "materials",
+        "navigation layer",
+        "motion",
+        "glass"
+      ]
+    },
+    {
+      "title": "Get to know the new design system",
+      "year": 2025,
+      "url": "https://developer.apple.com/videos/play/wwdc2025/356/",
+      "chapters": [
+        "Design Language",
+        "Structure",
+        "Continuity"
+      ],
+      "useFor": [
+        "design systems",
+        "information architecture",
+        "cross-platform consistency"
+      ]
+    },
+    {
+      "title": "Design foundations from idea to interface",
+      "year": 2025,
+      "url": "https://developer.apple.com/videos/play/wwdc2025/359/",
+      "chapters": [
+        "Structure",
+        "Navigation",
+        "Content",
+        "Visual Design"
+      ],
+      "useFor": [
+        "new app planning",
+        "information architecture",
+        "screen hierarchy"
+      ]
+    },
+    {
+      "title": "Elevate the design of your iPad app",
+      "year": 2025,
+      "url": "https://developer.apple.com/videos/play/wwdc2025/208/",
+      "chapters": [
+        "Navigation",
+        "Windows",
+        "Pointer",
+        "Menu bar"
+      ],
+      "useFor": [
+        "iPad",
+        "adaptive navigation",
+        "multitasking",
+        "pointer"
+      ]
+    },
+    {
+      "title": "Say hello to the new look of app icons",
+      "year": 2025,
+      "url": "https://developer.apple.com/videos/",
+      "useFor": [
+        "app icons",
+        "layered icons",
+        "branding"
+      ]
+    },
+    {
+      "title": "Create icons with Icon Composer",
+      "year": 2025,
+      "url": "https://developer.apple.com/videos/",
+      "useFor": [
+        "app icons",
+        "Icon Composer",
+        "Liquid Glass"
+      ]
+    },
+    {
+      "title": "What’s new in SF Symbols 7",
+      "year": 2025,
+      "url": "https://developer.apple.com/videos/",
+      "useFor": [
+        "symbols",
+        "iconography",
+        "symbol motion"
+      ]
+    }
+  ]
+}
