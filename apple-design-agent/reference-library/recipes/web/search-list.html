@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../../tokens/semantic-tokens.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--atlas-apple-font);background:var(--atlas-apple-bg);color:var(--atlas-apple-text)}
+main{max-width:760px;margin:auto;padding:32px 20px}
+.search{position:sticky;top:12px;z-index:4;padding:10px;border-radius:18px}
+.search input{width:100%;min-height:44px;border:1px solid var(--atlas-apple-separator);border-radius:12px;background:var(--atlas-apple-surface);color:inherit;padding:0 14px;font:inherit}
+.list{margin-top:18px;background:var(--atlas-apple-surface);border:1px solid var(--atlas-apple-separator);border-radius:18px;overflow:hidden}
+.row{display:flex;align-items:center;justify-content:space-between;min-height:52px;padding:8px 16px;border-bottom:1px solid var(--atlas-apple-separator)}
+.row:last-child{border-bottom:0}
+.secondary{color:var(--atlas-apple-text-secondary);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Buscar</h1>
+  <div class="search atlas-apple-glass">
+    <label for="q">Pesquisar registros</label>
+    <input id="q" type="search" placeholder="Nome, código ou descrição">
+  </div>
+  <section class="list" aria-label="Resultados">
+    <div class="row"><span>Primeiro resultado</span><span class="secondary">Detalhe</span></div>
+    <div class="row"><span>Segundo resultado</span><span class="secondary">Detalhe</span></div>
+    <div class="row"><span>Terceiro resultado</span><span class="secondary">Detalhe</span></div>
+  </section>
+</main>
+</body>
+</html>
