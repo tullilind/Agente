@@ -1,0 +1,78 @@
+{
+  "version": "2026.09",
+  "rules": [
+    {
+      "id": "content-first",
+      "category": "hierarchy",
+      "priority": "critical",
+      "rule": "A interface deve destacar conteúdo e tarefa principal antes de decoração.",
+      "checks": ["Existe um foco visual claro", "A ação principal é imediatamente identificável"]
+    },
+    {
+      "id": "progressive-disclosure",
+      "category": "layout",
+      "priority": "high",
+      "rule": "Evite despejar todas as opções na primeira camada; revele detalhes conforme a necessidade."
+    },
+    {
+      "id": "adaptive-layout",
+      "category": "layout",
+      "priority": "critical",
+      "rule": "O layout deve se adaptar a largura, orientação, multitarefa e diferentes densidades sem quebrar hierarquia."
+    },
+    {
+      "id": "touch-target",
+      "category": "accessibility",
+      "priority": "critical",
+      "rule": "Alvos de interação em iOS/iPadOS devem ter região acionável de pelo menos 44x44pt; visionOS usa alvo maior."
+    },
+    {
+      "id": "contrast",
+      "category": "accessibility",
+      "priority": "critical",
+      "rule": "Texto pequeno deve manter contraste mínimo equivalente a 4.5:1; texto grande pode usar 3:1."
+    },
+    {
+      "id": "semantic-colors",
+      "category": "color",
+      "priority": "critical",
+      "rule": "Use cores semânticas e variantes light/dark; não dependa apenas de uma cor para transmitir significado."
+    },
+    {
+      "id": "system-fonts",
+      "category": "typography",
+      "priority": "high",
+      "rule": "Prefira a pilha de fontes do sistema e preserve legibilidade e escalabilidade."
+    },
+    {
+      "id": "primary-actions",
+      "category": "controls",
+      "priority": "high",
+      "rule": "Limite ações visualmente proeminentes a uma ou duas por tela quando possível."
+    },
+    {
+      "id": "press-state",
+      "category": "controls",
+      "priority": "critical",
+      "rule": "Todo controle customizado deve comunicar hover/focus/pressed/disabled de forma perceptível."
+    },
+    {
+      "id": "liquid-glass",
+      "category": "materials",
+      "priority": "medium",
+      "rule": "Use material translúcido para separar controles do conteúdo apenas quando melhorar hierarquia e legibilidade. Não transforme tudo em vidro."
+    },
+    {
+      "id": "reduced-motion",
+      "category": "motion",
+      "priority": "critical",
+      "rule": "Animações devem ter propósito e oferecer comportamento reduzido quando o usuário preferir menos movimento."
+    },
+    {
+      "id": "platform-fit",
+      "category": "platform",
+      "priority": "critical",
+      "rule": "Adapte navegação e densidade ao paradigma da plataforma: toque no iOS, janelas e pointer no macOS, foco/olhar em plataformas espaciais."
+    }
+  ]
+}
