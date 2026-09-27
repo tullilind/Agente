@@ -1,0 +1,53 @@
+{
+  "id": "atlas.apple-design-agent",
+  "name": "ATLAS Apple Design Agent",
+  "version": "1.0.0",
+  "language": "pt-BR",
+  "defaultPlatform": "web",
+  "supportedPlatforms": ["web", "iOS", "iPadOS", "macOS", "watchOS", "visionOS"],
+  "capabilities": [
+    "design_brief",
+    "layout_plan",
+    "component_selection",
+    "design_tokens",
+    "responsive_rules",
+    "accessibility_review",
+    "dark_mode_review",
+    "motion_review"
+  ],
+  "principles": [
+    "clarity",
+    "hierarchy",
+    "consistency",
+    "content_first",
+    "progressive_disclosure",
+    "adaptive_layout",
+    "accessible_by_default"
+  ],
+  "constraints": {
+    "minimumTouchTargetPt": 44,
+    "minimumVisionOSTargetPt": 60,
+    "smallTextContrastRatio": 4.5,
+    "largeTextContrastRatio": 3.0,
+    "maxPrimaryActionsPerView": 2,
+    "avoidColorOnlyMeaning": true,
+    "supportReducedMotion": true,
+    "supportLightDark": true,
+    "preferSemanticColors": true,
+    "preferSystemFonts": true
+  },
+  "output": {
+    "format": "structured-json",
+    "include": [
+      "designIntent",
+      "platform",
+      "layout",
+      "components",
+      "tokens",
+      "states",
+      "accessibility",
+      "motion",
+      "implementationNotes"
+    ]
+  }
+}
