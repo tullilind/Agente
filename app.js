@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { type: "function", function: { name: "listar_despesas", description: "Lista todas as despesas financeiras atuais do usuário.", parameters: { type: "object", properties: {} } } },
             { type: "function", function: { name: "consultar_clima", description: "Consulta a previsão do tempo atual via API aberta.", parameters: { type: "object", properties: {} } } },
             { type: "function", function: { name: "criar_design_apple", description: "Cria uma especificação completa de interface seguindo o padrão Apple/HIG atual, com layout, componentes, acessibilidade, light/dark mode e movimento.", parameters: { type: "object", properties: { descricao: { type: "string", description: "Tela, sistema ou módulo que deve ser desenhado." }, plataforma: { type: "string", enum: ["web", "iOS", "iPadOS", "macOS", "visionOS"], description: "Plataforma alvo." } }, required: ["descricao"] } } },
-            { type: "function", function: { name: "consultar_biblioteca_apple", description: "Consulta a biblioteca de referência Apple atual do ATLAS para padrões de navegação, formulários, dashboards, Liquid Glass, acessibilidade e tokens.", parameters: { type: "object", properties: { topico: { type: "string", description: "Tema desejado, como dashboard, navigation, forms, liquid glass, accessibility ou tokens." } }, required: ["topico"] } } }
+            { type: "function", function: { name: "consultar_biblioteca_apple", description: "Pesquisa a biblioteca Apple completa do ATLAS, incluindo HIG oficial, princípios 2026, componentes, Design Resources, vídeos, exemplos reais de apps Apple e casos dos Apple Design Awards 2026.", parameters: { type: "object", properties: { consulta: { type: "string", description: "Descreva livremente o que precisa encontrar, por exemplo: sidebar para sistema administrativo, formulário de login, dashboard financeiro, Liquid Glass ou busca." }, topico: { type: "string", description: "Compatibilidade com chamadas antigas: tema resumido da consulta." }, plataforma: { type: "string", enum: ["web","iOS","iPadOS","macOS","watchOS","visionOS"], description: "Plataforma alvo opcional para priorizar referências." } }, required: [] } } }
         ];
 
         async function chamarMotorGroq(mensagemUsuario) {
@@ -252,7 +252,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (!window.MotorAgente) {
                                 throw new Error("BIBLIOTECA_DESIGN_APPLE_INDISPONIVEL");
                             }
-                            const referenciaApple = await window.MotorAgente.consultarBibliotecaApple(args.topico);
+                            const consultaApple = args.consulta || args.topico || "Apple design";
+                            const referenciaApple = await window.MotorAgente.consultarBibliotecaApple(
+                                consultaApple,
+                                { platform: args.plataforma || "" }
+                            );
                             resultadoAcao = JSON.stringify(referenciaApple);
                         }
 
