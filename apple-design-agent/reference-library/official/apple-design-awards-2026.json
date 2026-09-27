@@ -1,0 +1,107 @@
+{
+  "updatedAt": "2026-09-27",
+  "authority": "official-apple",
+  "sourceUrl": "https://developer.apple.com/design/awards/",
+  "cases": [
+    {
+      "name": "grug",
+      "category": "Delight and Fun",
+      "platforms": [
+        "iOS"
+      ],
+      "lesson": "A focused idea, playful bespoke visual language, and deliberate omission of unnecessary account/cloud complexity can create a memorable product."
+    },
+    {
+      "name": "Guitar Wiz",
+      "category": "Inclusivity",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "watchOS"
+      ],
+      "lesson": "Strong VoiceOver, Dynamic Type, Increased Contrast and Differentiate Without Color can be part of the core design rather than afterthoughts."
+    },
+    {
+      "name": "Structured",
+      "category": "Inclusivity finalist",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "watchOS"
+      ],
+      "lesson": "A simple, highly scannable layout can make planning more approachable, especially when automation reduces input burden."
+    },
+    {
+      "name": "NBA: Live Games & Scores",
+      "category": "Innovation",
+      "platforms": [
+        "visionOS"
+      ],
+      "lesson": "Platform-specific design can present simultaneous spatial content and contextual stats without treating spatial UI as a flat screen."
+    },
+    {
+      "name": "Moonlitt: Moon Phase Tracker",
+      "category": "Interaction",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "visionOS",
+        "watchOS"
+      ],
+      "lesson": "Cross-platform consistency plus strong Liquid Glass integration and easy onboarding can keep a specialized utility intuitive."
+    },
+    {
+      "name": "Tide Guide: Charts & Tables",
+      "category": "Visuals and Graphics",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "tvOS",
+        "visionOS",
+        "watchOS"
+      ],
+      "lesson": "Dense environmental data can remain clear through strong charts, custom animation, contextual color and polished Liquid Glass."
+    },
+    {
+      "name": "Primary: News in Depth",
+      "category": "Social Impact",
+      "platforms": [
+        "visionOS"
+      ],
+      "lesson": "A minimal interface can intentionally recede so content remains the focus, especially for information-heavy experiences."
+    },
+    {
+      "name": "Sago Mini Jinja’s Garden",
+      "category": "Interaction",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "tvOS"
+      ],
+      "lesson": "Interfaces can be intuitive without reading when controls map directly to natural gestures and visible affordances."
+    },
+    {
+      "name": "(Not Boring) Camera",
+      "category": "Visuals and Graphics finalist",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "lesson": "Bold personality can coexist with professional functionality when tactile controls, haptics and visual hierarchy stay coherent."
+    },
+    {
+      "name": "The Outsiders: Athlete Tracker",
+      "category": "Interaction finalist",
+      "platforms": [
+        "iOS",
+        "watchOS"
+      ],
+      "lesson": "Complex health and training metrics become understandable through a clear primary visualization and restrained supporting data."
+    }
+  ]
+}
