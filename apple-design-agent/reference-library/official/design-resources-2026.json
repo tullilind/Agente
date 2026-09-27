@@ -1,0 +1,110 @@
+{
+  "updatedAt": "2026-09-27",
+  "authority": "official-apple",
+  "sourceUrl": "https://developer.apple.com/design/resources/",
+  "platforms": [
+    {
+      "platform": "iOS/iPadOS",
+      "version": "27",
+      "resources": [
+        "UI Kit — Figma",
+        "UI Kit — Sketch",
+        "App Icon Template — Figma",
+        "App Icon Template — Sketch",
+        "App Icon Template — Photoshop/Illustrator"
+      ]
+    },
+    {
+      "platform": "macOS",
+      "version": "27",
+      "resources": [
+        "UI Kit — Figma",
+        "UI Kit — Sketch"
+      ]
+    },
+    {
+      "platform": "watchOS",
+      "version": "26",
+      "resources": [
+        "UI Kit — Figma",
+        "UI Kit — Sketch"
+      ]
+    },
+    {
+      "platform": "visionOS",
+      "version": "26",
+      "resources": [
+        "UI Kit — Figma",
+        "UI Kit — Sketch"
+      ]
+    },
+    {
+      "platform": "tvOS",
+      "version": "18",
+      "resources": [
+        "UI Kit — Sketch",
+        "Templates",
+        "Production Templates"
+      ]
+    }
+  ],
+  "technologyTemplates": [
+    "App Clips Design Template",
+    "Apple Pay Design Template",
+    "Camera Control",
+    "Live Activities Template",
+    "Messages Template",
+    "Sign in with Apple Buttons",
+    "Siri and App Shortcuts Template",
+    "Tap to Pay on iPhone Template",
+    "TipKit Template",
+    "Wallet Template"
+  ],
+  "fonts": [
+    {
+      "name": "SF Pro",
+      "use": "System font for iOS, iPadOS, macOS and tvOS."
+    },
+    {
+      "name": "SF Compact",
+      "use": "System font for watchOS, optimized for small sizes and narrow columns."
+    },
+    {
+      "name": "SF Mono",
+      "use": "Monospaced family used where row and column alignment matters."
+    },
+    {
+      "name": "New York",
+      "use": "Serif family suitable for reading at small sizes and display use at larger sizes."
+    },
+    {
+      "name": "SF Arabic",
+      "use": "Arabic system font."
+    },
+    {
+      "name": "SF Armenian",
+      "use": "Armenian family balanced for multilingual typesetting."
+    },
+    {
+      "name": "SF Georgian",
+      "use": "Georgian family supporting modern forms."
+    },
+    {
+      "name": "SF Hebrew",
+      "use": "Hebrew family with diacritic support."
+    }
+  ],
+  "tools": [
+    {
+      "name": "SF Symbols 27",
+      "url": "https://developer.apple.com/sf-symbols/",
+      "note": "Over 7,000 symbols, multiple weights/scales, rendering modes and motion."
+    },
+    {
+      "name": "Icon Composer",
+      "url": "https://developer.apple.com/icon-composer/",
+      "note": "Creates layered Liquid Glass app icons for supported Apple platforms."
+    }
+  ],
+  "agentRule": "Use these resources as authoritative references. Do not redistribute Apple's proprietary design files or fonts inside generated projects; link to the official resource instead."
+}
