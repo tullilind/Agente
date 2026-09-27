@@ -1,0 +1,35 @@
+{
+  "category": "states-accessibility",
+  "interactionStates": [
+    "default",
+    "hover",
+    "focus",
+    "pressed",
+    "selected",
+    "disabled",
+    "loading",
+    "success",
+    "warning",
+    "error"
+  ],
+  "accessibility": {
+    "minimumHitTargetPt": 44,
+    "minimumReadableTextPt": 11,
+    "preferSemanticLabels": true,
+    "keyboardFocusOnDesktop": true,
+    "doNotUseColorAsOnlySignal": true,
+    "supportReducedMotion": true,
+    "supportReducedTransparency": true,
+    "supportLightDark": true
+  },
+  "agentChecks": [
+    "A ação principal está clara?",
+    "Todo controle tem rótulo ou contexto acessível?",
+    "Existe estado vazio?",
+    "Existe estado carregando?",
+    "Existe estado de erro recuperável?",
+    "Existe foco visível em desktop/web?",
+    "A interface continua legível em dark mode?",
+    "Movimento e transparência possuem fallback?"
+  ]
+}
