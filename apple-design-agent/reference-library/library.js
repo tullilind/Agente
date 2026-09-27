@@ -43,8 +43,8 @@
     "patterns/liquid-glass.json",
     "patterns/states-accessibility.json",
     "tokens/semantic-tokens.json",
-    "knowledge/apple-hig-rules.json",
-    "knowledge/components.json"
+    "../knowledge/apple-hig-rules.json",
+    "../knowledge/components.json"
   ];
 
   const cache = new Map();
