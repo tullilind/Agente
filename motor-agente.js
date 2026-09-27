@@ -1,18 +1,28 @@
 (function (global) {
   "use strict";
 
-  const state = {
-    loaded: false,
-    loading: null
-  };
+  const loaders = new Map();
 
-  function loadScript(src) {
-    return new Promise((resolve, reject) => {
+  function loadScript(src, globalName) {
+    if (global[globalName]) return Promise.resolve(global[globalName]);
+    if (loaders.has(src)) return loaders.get(src);
+
+    const promise = new Promise((resolve, reject) => {
       const existing = document.querySelector(`script[data-atlas-module="${src}"]`);
+
+      const resolveModule = () => {
+        const module = global[globalName];
+        if (!module) {
+          reject(new Error("Módulo carregado, mas global ausente: " + globalName));
+          return;
+        }
+        resolve(module);
+      };
+
       if (existing) {
-        if (global.AtlasAppleDesigner) return resolve(global.AtlasAppleDesigner);
-        existing.addEventListener("load", () => resolve(global.AtlasAppleDesigner), { once: true });
-        existing.addEventListener("error", reject, { once: true });
+        if (global[globalName]) return resolve(global[globalName]);
+        existing.addEventListener("load", resolveModule, { once: true });
+        existing.addEventListener("error", () => reject(new Error("Falha ao carregar " + src)), { once: true });
         return;
       }
 
@@ -20,42 +30,42 @@
       script.src = src;
       script.async = true;
       script.dataset.atlasModule = src;
-      script.onload = () => {
-        state.loaded = true;
-        resolve(global.AtlasAppleDesigner);
-      };
-      script.onerror = () => reject(new Error("Falha ao carregar ATLAS Apple Design Agent."));
+      script.onload = resolveModule;
+      script.onerror = () => reject(new Error("Falha ao carregar " + src));
       document.head.appendChild(script);
     });
+
+    loaders.set(src, promise);
+    return promise;
   }
 
   function carregarBibliotecaApple() {
-    if (global.AtlasAppleReferenceLibrary) {
-      return Promise.resolve(global.AtlasAppleReferenceLibrary);
-    }
-    return loadScript("apple-design-agent/reference-library/library.js");
+    return loadScript(
+      "apple-design-agent/reference-library/library.js",
+      "AtlasAppleReferenceLibrary"
+    );
   }
 
   function carregarDesignerApple() {
-    if (global.AtlasAppleDesigner) {
-      state.loaded = true;
-      return Promise.resolve(global.AtlasAppleDesigner);
-    }
-
-    if (!state.loading) {
-      state.loading = loadScript("apple-design-agent/apple-designer.js");
-    }
-
-    return state.loading;
+    return loadScript(
+      "apple-design-agent/apple-designer.js",
+      "AtlasAppleDesigner"
+    );
   }
 
-  async function consultarBibliotecaApple(topico) {
+  async function consultarBibliotecaApple(consulta, opcoes) {
     const library = await carregarBibliotecaApple();
     if (!library) throw new Error("Biblioteca Apple não ficou disponível.");
-    return library.getTopic(topico);
+
+    const opts = opcoes || {};
+    return library.search(consulta, {
+      platform: opts.platform || "",
+      limit: opts.limit || 15
+    });
   }
 
   async function criarDesignApple(descricao, opcoes) {
+    const opts = opcoes || {};
     const [engine, library] = await Promise.all([
       carregarDesignerApple(),
       carregarBibliotecaApple()
@@ -63,35 +73,56 @@
 
     if (!engine) throw new Error("Designer Apple não ficou disponível.");
 
-    const spec = engine.createDesignBrief(descricao, opcoes || {});
+    const spec = engine.createDesignBrief(descricao, opts);
     const validation = engine.validateSpec(spec);
 
     let referenceContext = null;
     if (library) {
       const intent = spec.designIntent || "general-product";
       const topics = intent === "dashboard"
-        ? ["dashboard", "navigation", "accessibility", "tokens"]
+        ? ["dashboard", "navigation", "accessibility", "principles", "examples"]
         : intent === "authentication"
-          ? ["forms", "accessibility", "tokens"]
-          : ["navigation", "accessibility", "tokens"];
+          ? ["forms", "accessibility", "writing", "principles", "examples"]
+          : ["navigation", "accessibility", "principles", "examples"];
 
-      referenceContext = await library.buildContext(topics);
+      referenceContext = await library.buildContext(topics, {
+        query: descricao,
+        platform: spec.platform,
+        limit: 15
+      });
     }
 
-    return { spec, validation, referenceContext };
+    const referencesUsed = [];
+    const matches = referenceContext?.searchResults?.results || [];
+
+    matches.forEach(item => {
+      const data = item.data || {};
+      const url = data.sourceUrl || data.url || null;
+      if (url && !referencesUsed.includes(url)) referencesUsed.push(url);
+    });
+
+    return {
+      spec,
+      validation,
+      referencesUsed: referencesUsed.slice(0, 8),
+      referenceContext
+    };
   }
 
-  global.MotorAgente = {
+  global.MotorAgente = Object.freeze({
     carregarDesignerApple,
     carregarBibliotecaApple,
     consultarBibliotecaApple,
     criarDesignApple,
     get ready() {
-      return Promise.all([carregarDesignerApple(), carregarBibliotecaApple()]);
+      return Promise.all([
+        carregarDesignerApple(),
+        carregarBibliotecaApple()
+      ]);
     }
-  };
+  });
 
-  Promise.all([carregarDesignerApple(), carregarBibliotecaApple()]).catch((err) => {
+  global.MotorAgente.ready.catch((err) => {
     console.error("[ATLAS Apple Design Agent]", err);
   });
 })(window);
