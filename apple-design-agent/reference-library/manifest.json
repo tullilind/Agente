@@ -1,0 +1,71 @@
+{
+  "id": "atlas.apple-reference-library",
+  "version": "2.0.0",
+  "updatedAt": "2026-09-27",
+  "locale": "pt-BR",
+  "targetPlatforms": [
+    "web",
+    "iOS",
+    "iPadOS",
+    "macOS",
+    "watchOS",
+    "visionOS"
+  ],
+  "currentDesignResources": {
+    "iOS/iPadOS": "27",
+    "macOS": "27",
+    "watchOS": "26",
+    "visionOS": "26"
+  },
+  "officialSources": [
+    {
+      "name": "Apple Human Interface Guidelines",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/",
+      "priority": 1
+    },
+    {
+      "name": "Apple Design Resources",
+      "url": "https://developer.apple.com/design/resources/",
+      "priority": 1
+    },
+    {
+      "name": "Apple Layout HIG",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/layout",
+      "priority": 1
+    },
+    {
+      "name": "Apple Liquid Glass",
+      "url": "https://developer.apple.com/documentation/technologyoverviews/liquid-glass",
+      "priority": 1
+    },
+    {
+      "name": "Apple UI Design Tips",
+      "url": "https://developer.apple.com/design/tips/",
+      "priority": 1
+    }
+  ],
+  "communityReferences": [
+    {
+      "name": "ios27-design-system",
+      "repo": "seunghan91/ios27-design-system",
+      "url": "https://github.com/seunghan91/ios27-design-system",
+      "purpose": "Referência de implementação web, tokens, componentes e receitas de página.",
+      "authority": "community"
+    },
+    {
+      "name": "apple-design-skill",
+      "repo": "billythekidz/apple-design-skill",
+      "url": "https://github.com/billythekidz/apple-design-skill",
+      "purpose": "Referência de organização de conhecimento para agentes.",
+      "authority": "community"
+    }
+  ],
+  "modules": [
+    "tokens/semantic-tokens.json",
+    "patterns/navigation.json",
+    "patterns/forms.json",
+    "patterns/dashboards.json",
+    "patterns/liquid-glass.json",
+    "patterns/states-accessibility.json"
+  ]
+}
