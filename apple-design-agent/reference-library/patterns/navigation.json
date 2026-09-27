@@ -1,0 +1,89 @@
+{
+  "category": "navigation",
+  "patterns": [
+    {
+      "id": "desktop-sidebar-toolbar",
+      "platforms": [
+        "macOS",
+        "iPadOS",
+        "web"
+      ],
+      "structure": [
+        "sidebar",
+        "toolbar",
+        "content",
+        "optional-inspector"
+      ],
+      "useWhen": [
+        "múltiplas áreas principais",
+        "conteúdo administrativo",
+        "gerenciamento complexo"
+      ],
+      "avoidWhen": [
+        "fluxo linear curto",
+        "uma única tarefa simples"
+      ]
+    },
+    {
+      "id": "mobile-tab-navigation",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "structure": [
+        "content",
+        "tab-bar"
+      ],
+      "useWhen": [
+        "3 a 5 destinos principais recorrentes"
+      ],
+      "avoidWhen": [
+        "ações temporárias",
+        "fluxos de cadastro passo a passo"
+      ]
+    },
+    {
+      "id": "stack-navigation",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "web"
+      ],
+      "structure": [
+        "root",
+        "detail",
+        "back"
+      ],
+      "useWhen": [
+        "hierarquia pai-filho",
+        "drill-down de dados"
+      ],
+      "requirements": [
+        "estado de retorno previsível",
+        "título contextual"
+      ]
+    },
+    {
+      "id": "search-prominent",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "web"
+      ],
+      "structure": [
+        "search-field",
+        "results",
+        "empty-state"
+      ],
+      "useWhen": [
+        "busca é tarefa central"
+      ],
+      "requirements": [
+        "limpar busca",
+        "estado sem resultados",
+        "feedback enquanto carrega"
+      ]
+    }
+  ]
+}
