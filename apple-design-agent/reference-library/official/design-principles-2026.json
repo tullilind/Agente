@@ -1,0 +1,58 @@
+{
+  "updatedAt": "2026-09-27",
+  "authority": "official-apple",
+  "sourceUrl": "https://developer.apple.com/videos/play/wwdc2026/250/",
+  "higUrl": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+  "principles": [
+    {
+      "name": "Purpose",
+      "pt": "Propósito",
+      "agentRule": "Antes de desenhar, identifique o valor real para a pessoa e elimine o que não serve a esse propósito."
+    },
+    {
+      "name": "Agency",
+      "pt": "Agência",
+      "agentRule": "Dê controle, escolhas e caminhos reversíveis; ofereça undo e confirmação para ações destrutivas."
+    },
+    {
+      "name": "Responsibility",
+      "pt": "Responsabilidade",
+      "agentRule": "Respeite privacidade, minimize coleta e antecipe riscos, principalmente em recursos de IA."
+    },
+    {
+      "name": "Familiarity",
+      "pt": "Familiaridade",
+      "agentRule": "Coisas visualmente semelhantes devem se comportar de maneira semelhante; preserve convenções e posições previsíveis."
+    },
+    {
+      "name": "Flexibility",
+      "pt": "Flexibilidade",
+      "agentRule": "Adapte a interface a diferentes tamanhos, dispositivos, entradas, acessibilidade e formas de uso."
+    },
+    {
+      "name": "Simplicity",
+      "pt": "Simplicidade",
+      "agentRule": "Remova fricção e excesso sem esconder tudo. Simples não significa minimalista; significa claro e direto."
+    },
+    {
+      "name": "Craft",
+      "pt": "Cuidado",
+      "agentRule": "Trate detalhes de espaçamento, alinhamento, texto, estados, animação e feedback como parte do produto."
+    },
+    {
+      "name": "Delight",
+      "pt": "Encantamento",
+      "agentRule": "Busque uma emoção coerente com o propósito, sem adicionar enfeite gratuito como substituto de boa experiência."
+    }
+  ],
+  "decisionChecklist": [
+    "Qual é o propósito central desta tela?",
+    "A pessoa mantém controle e consegue desfazer erros?",
+    "Existe algo coletado ou exibido sem necessidade?",
+    "O comportamento é familiar para a plataforma?",
+    "A tela continua funcionando em outras larguras e modos de entrada?",
+    "Há passos ou elementos que podem ser removidos?",
+    "Os pequenos detalhes transmitem cuidado?",
+    "O encantamento nasce do uso ou apenas de decoração?"
+  ]
+}
