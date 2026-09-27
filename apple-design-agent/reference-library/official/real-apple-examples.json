@@ -1,0 +1,165 @@
+{
+  "updatedAt": "2026-09-27",
+  "authority": "official-apple",
+  "examples": [
+    {
+      "product": "Mail",
+      "platforms": [
+        "iPadOS",
+        "macOS"
+      ],
+      "pattern": "Sidebar + split content",
+      "sourceUrl": "https://developer.apple.com/videos/play/wwdc2025/208/",
+      "lesson": "Use a sidebar when the app has many subviews or deep content hierarchy. Mail exposes mailboxes and accounts at the top level to flatten navigation.",
+      "useFor": [
+        "email clients",
+        "document managers",
+        "admin apps",
+        "multi-section systems"
+      ]
+    },
+    {
+      "product": "Music",
+      "platforms": [
+        "iPadOS"
+      ],
+      "pattern": "Adaptive tab bar ↔ sidebar",
+      "sourceUrl": "https://developer.apple.com/videos/play/wwdc2025/208/",
+      "lesson": "A compact tab bar can adapt into a sidebar as space and complexity grow, keeping navigation scalable.",
+      "useFor": [
+        "media apps",
+        "catalogs",
+        "systems with growing navigation"
+      ]
+    },
+    {
+      "product": "Settings",
+      "platforms": [
+        "iOS"
+      ],
+      "pattern": "Hierarchical lists",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/lists-and-tables",
+      "lesson": "A hierarchy of lists is effective for scanning and drilling into configuration categories.",
+      "useFor": [
+        "settings",
+        "preferences",
+        "configuration modules"
+      ]
+    },
+    {
+      "product": "Clock",
+      "platforms": [
+        "iOS"
+      ],
+      "pattern": "Top-level tab navigation",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/tab-bars",
+      "lesson": "Use tabs for persistent top-level destinations such as distinct functional areas, not for commands.",
+      "useFor": [
+        "mobile apps with a few primary sections"
+      ]
+    },
+    {
+      "product": "Notes",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS"
+      ],
+      "pattern": "Prominent search",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/searching",
+      "lesson": "When search is central, give it a primary position close to important actions.",
+      "useFor": [
+        "knowledge bases",
+        "records",
+        "catalogs",
+        "large datasets"
+      ]
+    },
+    {
+      "product": "Photos",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "pattern": "Dedicated search destination",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/searching",
+      "lesson": "Search can deserve a dedicated tab when discovery spans the whole content library.",
+      "useFor": [
+        "media libraries",
+        "catalogs",
+        "large collections"
+      ]
+    },
+    {
+      "product": "Apple TV",
+      "platforms": [
+        "iOS",
+        "iPadOS"
+      ],
+      "pattern": "Dedicated search destination",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/searching",
+      "lesson": "A dedicated search area is appropriate when finding content is a recurring top-level task.",
+      "useFor": [
+        "streaming",
+        "content catalogs",
+        "commerce catalogs"
+      ]
+    },
+    {
+      "product": "Keynote",
+      "platforms": [
+        "macOS"
+      ],
+      "pattern": "Segmented controls",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/segmented-controls",
+      "lesson": "Segmented controls work well for compact mutually related formatting or view options.",
+      "useFor": [
+        "editors",
+        "formatting toolbars",
+        "inspectors"
+      ]
+    },
+    {
+      "product": "Finder",
+      "platforms": [
+        "macOS"
+      ],
+      "pattern": "Column view",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/column-views",
+      "lesson": "A column browser works for deep hierarchies where people move back and forth between levels frequently.",
+      "useFor": [
+        "file managers",
+        "asset browsers",
+        "deep taxonomies"
+      ]
+    },
+    {
+      "product": "Stocks",
+      "platforms": [
+        "iOS"
+      ],
+      "pattern": "Locale-aware color meaning",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/color",
+      "lesson": "Do not assume colors mean the same thing globally; positive/negative color conventions can vary by locale.",
+      "useFor": [
+        "financial dashboards",
+        "global products",
+        "status visualizations"
+      ]
+    },
+    {
+      "product": "Apple Watch Handwashing Timer",
+      "platforms": [
+        "watchOS"
+      ],
+      "pattern": "Setting explanation",
+      "sourceUrl": "https://developer.apple.com/design/human-interface-guidelines/writing",
+      "lesson": "Describe what a setting does when enabled instead of redundantly explaining both on and off states.",
+      "useFor": [
+        "settings copy",
+        "toggles",
+        "preference screens"
+      ]
+    }
+  ]
+}
