@@ -1,0 +1,480 @@
+{
+  "updatedAt": "2026-09-27",
+  "source": "https://developer.apple.com/design/human-interface-guidelines/",
+  "authority": "official-apple",
+  "designFundamentals": [
+    {
+      "name": "Design principles",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+      "keywords": [
+        "purpose",
+        "agency",
+        "responsibility",
+        "familiarity",
+        "flexibility",
+        "simplicity",
+        "craft",
+        "delight"
+      ]
+    },
+    {
+      "name": "Designing for iOS",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios",
+      "keywords": [
+        "iphone",
+        "ios",
+        "touch",
+        "mobile"
+      ]
+    },
+    {
+      "name": "Designing for iPadOS",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+      "keywords": [
+        "ipad",
+        "multitasking",
+        "pointer",
+        "keyboard",
+        "pencil",
+        "windows"
+      ]
+    },
+    {
+      "name": "Designing for macOS",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-macos",
+      "keywords": [
+        "mac",
+        "desktop",
+        "window",
+        "menu bar",
+        "pointer"
+      ]
+    }
+  ],
+  "foundations": [
+    {
+      "name": "Accessibility",
+      "slug": "accessibility",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+    },
+    {
+      "name": "App icons",
+      "slug": "app-icons",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-icons"
+    },
+    {
+      "name": "Branding",
+      "slug": "branding",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/branding"
+    },
+    {
+      "name": "Color",
+      "slug": "color",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/color"
+    },
+    {
+      "name": "Dark Mode",
+      "slug": "dark-mode",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode"
+    },
+    {
+      "name": "Icons",
+      "slug": "icons",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/icons"
+    },
+    {
+      "name": "Images",
+      "slug": "images",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images"
+    },
+    {
+      "name": "Immersive experiences",
+      "slug": "immersive-experiences",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/immersive-experiences"
+    },
+    {
+      "name": "Inclusion",
+      "slug": "inclusion",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/inclusion"
+    },
+    {
+      "name": "Layout",
+      "slug": "layout",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/layout"
+    },
+    {
+      "name": "Materials",
+      "slug": "materials",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/materials"
+    },
+    {
+      "name": "Motion",
+      "slug": "motion",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/motion"
+    },
+    {
+      "name": "Privacy",
+      "slug": "privacy",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/privacy"
+    },
+    {
+      "name": "Right to left",
+      "slug": "right-to-left",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/right-to-left"
+    },
+    {
+      "name": "SF Symbols",
+      "slug": "sf-symbols",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols"
+    },
+    {
+      "name": "Spatial layout",
+      "slug": "spatial-layout",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/spatial-layout"
+    },
+    {
+      "name": "Typography",
+      "slug": "typography",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/typography"
+    },
+    {
+      "name": "Writing",
+      "slug": "writing",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/writing"
+    }
+  ],
+  "patterns": [
+    {
+      "name": "Charting data",
+      "slug": "charting-data",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/charting-data"
+    },
+    {
+      "name": "Collaboration and sharing",
+      "slug": "collaboration-and-sharing",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing"
+    },
+    {
+      "name": "Drag and drop",
+      "slug": "drag-and-drop",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop"
+    },
+    {
+      "name": "Entering data",
+      "slug": "entering-data",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data"
+    },
+    {
+      "name": "Feedback",
+      "slug": "feedback",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/feedback"
+    },
+    {
+      "name": "File management",
+      "slug": "file-management",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/file-management"
+    },
+    {
+      "name": "Going full screen",
+      "slug": "going-full-screen",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen"
+    },
+    {
+      "name": "Launching",
+      "slug": "launching",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching"
+    },
+    {
+      "name": "Live-viewing apps",
+      "slug": "live-viewing-apps",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps"
+    },
+    {
+      "name": "Loading",
+      "slug": "loading",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/loading"
+    },
+    {
+      "name": "Managing accounts",
+      "slug": "managing-accounts",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts"
+    },
+    {
+      "name": "Managing notifications",
+      "slug": "managing-notifications",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/managing-notifications"
+    },
+    {
+      "name": "Modality",
+      "slug": "modality",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/modality"
+    },
+    {
+      "name": "Multitasking",
+      "slug": "multitasking",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/multitasking"
+    },
+    {
+      "name": "Offering help",
+      "slug": "offering-help",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/offering-help"
+    },
+    {
+      "name": "Onboarding",
+      "slug": "onboarding",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/onboarding"
+    },
+    {
+      "name": "Playing audio",
+      "slug": "playing-audio",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-audio"
+    },
+    {
+      "name": "Playing haptics",
+      "slug": "playing-haptics",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics"
+    },
+    {
+      "name": "Playing video",
+      "slug": "playing-video",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video"
+    },
+    {
+      "name": "Printing",
+      "slug": "printing",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/printing"
+    },
+    {
+      "name": "Ratings and reviews",
+      "slug": "ratings-and-reviews",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews"
+    },
+    {
+      "name": "Searching",
+      "slug": "searching",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/searching"
+    },
+    {
+      "name": "Settings",
+      "slug": "settings",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/settings"
+    },
+    {
+      "name": "Undo and redo",
+      "slug": "undo-and-redo",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo"
+    },
+    {
+      "name": "Workouts",
+      "slug": "workouts",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/workouts"
+    }
+  ],
+  "componentGroups": {
+    "content": [
+      "Charts",
+      "Gauges",
+      "Images",
+      "Labels"
+    ],
+    "layoutAndOrganization": [
+      "Boxes",
+      "Column views",
+      "Disclosure controls",
+      "Lists and tables",
+      "Outline views",
+      "Scroll views",
+      "Split views",
+      "Tab views",
+      "Web views",
+      "Windows"
+    ],
+    "menusAndActions": [
+      "Activity views",
+      "Buttons",
+      "Context menus",
+      "Dock menus",
+      "Edit menus",
+      "Home Screen quick actions",
+      "Menus",
+      "Ornaments",
+      "Pop-up buttons",
+      "Pull-down buttons",
+      "The menu bar",
+      "Toolbars"
+    ],
+    "navigationAndSearch": [
+      "Path controls",
+      "Search fields",
+      "Sidebars",
+      "Tab bars",
+      "Token fields"
+    ],
+    "presentation": [
+      "Action sheets",
+      "Alerts",
+      "Popovers",
+      "Sheets",
+      "System-provided views",
+      "Views",
+      "Windows"
+    ],
+    "selectionAndInput": [
+      "Color wells",
+      "Combo boxes",
+      "Digit entry views",
+      "Pickers",
+      "Segmented controls",
+      "Sliders",
+      "Steppers",
+      "Text fields",
+      "Text views",
+      "Toggles"
+    ],
+    "status": [
+      "Activity indicators",
+      "Progress indicators",
+      "Status bars",
+      "Page controls"
+    ],
+    "systemExperiences": [
+      "Live Activities",
+      "Notifications",
+      "SharePlay",
+      "Siri",
+      "Snippets",
+      "Spotlight",
+      "Widgets",
+      "Control Center",
+      "Lock Screen",
+      "Now Playing"
+    ]
+  },
+  "verifiedComponentPages": [
+    {
+      "name": "Buttons",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+      "lesson": "A button initiates an immediate action; style, content and semantic role need to make its function obvious."
+    },
+    {
+      "name": "Lists and tables",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/lists-and-tables",
+      "lesson": "Use rows for scannable text and hierarchies; persistent selection is useful for navigation hierarchies."
+    },
+    {
+      "name": "Tab bars",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tab-bars",
+      "lesson": "Tab bars navigate top-level areas; they are not action bars."
+    },
+    {
+      "name": "Sidebars",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sidebars",
+      "lesson": "Use on wide layouts for a broad flat hierarchy; adapt or collapse when space shrinks."
+    },
+    {
+      "name": "Toolbars",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "lesson": "Group frequent contextual commands without overcrowding."
+    },
+    {
+      "name": "Menus",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/menus",
+      "lesson": "Use menus to reveal space-efficient commands while preserving familiar behavior."
+    },
+    {
+      "name": "Alerts",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/alerts",
+      "lesson": "Use direct neutral language and concise titles; alerts should communicate a situation, not vague error codes."
+    },
+    {
+      "name": "Sheets",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "lesson": "Use for a scoped task closely related to the current context."
+    },
+    {
+      "name": "Pickers",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/pickers",
+      "lesson": "Useful for medium-to-long predictable choices; avoid them for short lists."
+    },
+    {
+      "name": "Segmented controls",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/segmented-controls",
+      "lesson": "Use a compact linear set of options for closely related modes or selections."
+    },
+    {
+      "name": "Toggles",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "lesson": "Use only for opposing states such as on/off."
+    },
+    {
+      "name": "Text fields",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+      "lesson": "Use for short specific text input; labels remain useful because placeholders disappear."
+    },
+    {
+      "name": "Text views",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/text-views",
+      "lesson": "Use for larger amounts of text and preserve Dynamic Type and selectable useful information."
+    },
+    {
+      "name": "Labels",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/labels",
+      "lesson": "Use for small noneditable text; prefer system fonts and semantic label colors."
+    },
+    {
+      "name": "Progress indicators",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/progress-indicators",
+      "lesson": "Prefer determinate progress when duration is knowable; use spinners for constrained background work."
+    },
+    {
+      "name": "Charts",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/charts",
+      "lesson": "Highlight a small number of meaningful insights instead of displaying data merely because it exists."
+    },
+    {
+      "name": "Page controls",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "lesson": "Use for ordered flat pages, not complex hierarchy."
+    },
+    {
+      "name": "Column views",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/column-views",
+      "lesson": "Useful on macOS for deep hierarchy with frequent back-and-forth navigation."
+    }
+  ],
+  "inputs": [
+    {
+      "name": "Gestures",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/gestures"
+    },
+    {
+      "name": "Keyboards",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards"
+    },
+    {
+      "name": "Pointing devices",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/pointing-devices"
+    },
+    {
+      "name": "Apple Pencil and styluses",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-styluses"
+    },
+    {
+      "name": "Game controls",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/game-controls"
+    },
+    {
+      "name": "Remotes",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes"
+    },
+    {
+      "name": "Digital Crown",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/digital-crown"
+    },
+    {
+      "name": "Focus and selection",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection"
+    }
+  ],
+  "technologyIndexUrl": "https://developer.apple.com/design/human-interface-guidelines/technologies"
+}
