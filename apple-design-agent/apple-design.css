@@ -1,0 +1,148 @@
+:root {
+  --atlas-bg: #f5f5f7;
+  --atlas-surface: rgba(255, 255, 255, 0.82);
+  --atlas-surface-solid: #ffffff;
+  --atlas-text: #1d1d1f;
+  --atlas-text-secondary: #6e6e73;
+  --atlas-border: rgba(60, 60, 67, 0.18);
+  --atlas-accent: #007aff;
+  --atlas-danger: #ff3b30;
+  --atlas-success: #34c759;
+  --atlas-warning: #ff9f0a;
+  --atlas-radius-sm: 10px;
+  --atlas-radius-md: 14px;
+  --atlas-radius-lg: 20px;
+  --atlas-space-1: 4px;
+  --atlas-space-2: 8px;
+  --atlas-space-3: 12px;
+  --atlas-space-4: 16px;
+  --atlas-space-5: 20px;
+  --atlas-space-6: 24px;
+  --atlas-space-8: 32px;
+  --atlas-space-10: 40px;
+  --atlas-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --atlas-blur: 22px;
+  --atlas-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --atlas-bg: #000000;
+    --atlas-surface: rgba(28, 28, 30, 0.78);
+    --atlas-surface-solid: #1c1c1e;
+    --atlas-text: #f5f5f7;
+    --atlas-text-secondary: #aeaeb2;
+    --atlas-border: rgba(235, 235, 245, 0.16);
+    --atlas-accent: #0a84ff;
+    --atlas-danger: #ff453a;
+    --atlas-success: #30d158;
+    --atlas-warning: #ff9f0a;
+    --atlas-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+  }
+}
+
+.atlas-apple-ui {
+  font-family: var(--atlas-font);
+  background: var(--atlas-bg);
+  color: var(--atlas-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.atlas-glass {
+  background: var(--atlas-surface);
+  border: 1px solid var(--atlas-border);
+  backdrop-filter: blur(var(--atlas-blur)) saturate(135%);
+  -webkit-backdrop-filter: blur(var(--atlas-blur)) saturate(135%);
+}
+
+.atlas-card {
+  background: var(--atlas-surface-solid);
+  border: 1px solid var(--atlas-border);
+  border-radius: var(--atlas-radius-lg);
+  padding: var(--atlas-space-6);
+  box-shadow: var(--atlas-shadow);
+}
+
+.atlas-btn {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 var(--atlas-space-4);
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font: 600 15px/1 var(--atlas-font);
+  cursor: pointer;
+  transition: transform 140ms ease, opacity 140ms ease, background 140ms ease;
+}
+
+.atlas-btn:active {
+  transform: scale(0.98);
+}
+
+.atlas-btn:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--atlas-accent) 35%, transparent);
+  outline-offset: 2px;
+}
+
+.atlas-btn-primary {
+  background: var(--atlas-accent);
+  color: #fff;
+}
+
+.atlas-btn-secondary {
+  background: var(--atlas-surface-solid);
+  color: var(--atlas-text);
+  border-color: var(--atlas-border);
+}
+
+.atlas-field {
+  min-height: 44px;
+  width: 100%;
+  border: 1px solid var(--atlas-border);
+  border-radius: 12px;
+  padding: 0 var(--atlas-space-3);
+  background: var(--atlas-surface-solid);
+  color: var(--atlas-text);
+  font: 400 15px/1.4 var(--atlas-font);
+}
+
+.atlas-field:focus {
+  outline: none;
+  border-color: var(--atlas-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--atlas-accent) 18%, transparent);
+}
+
+.atlas-title {
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.atlas-heading {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 650;
+}
+
+.atlas-body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.atlas-caption {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--atlas-text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-apple-ui *,
+  .atlas-apple-ui *::before,
+  .atlas-apple-ui *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
