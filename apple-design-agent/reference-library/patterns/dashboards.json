@@ -1,0 +1,24 @@
+{
+  "category": "dashboards",
+  "principles": [
+    "Resumo primeiro, detalhes depois.",
+    "KPIs devem responder perguntas reais, não decorar a tela.",
+    "Use cartões apenas quando houver agrupamento semântico.",
+    "Gráficos precisam de título, unidade, período e estado vazio.",
+    "Filtros devem ficar próximos do conteúdo que alteram.",
+    "Tabelas densas são aceitáveis em desktop, mas precisam de hierarquia, seleção e navegação previsíveis.",
+    "Ações destrutivas não devem competir visualmente com ações principais."
+  ],
+  "suggestedStructure": [
+    "toolbar",
+    "summary-strip",
+    "primary-content",
+    "secondary-insights",
+    "detail-table-or-list"
+  ],
+  "responsive": {
+    "desktop": "sidebar + toolbar + grade de 12 colunas",
+    "tablet": "sidebar recolhível + conteúdo adaptativo",
+    "mobile": "pilha vertical + filtros em sheet"
+  }
+}
