@@ -167,7 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
             { type: "function", function: { name: "listar_tarefas", description: "Lê e retorna a lista de tarefas anotadas para o usuário.", parameters: { type: "object", properties: {} } } },
             { type: "function", function: { name: "registrar_despesa", description: "Registra um gasto ou despesa.", parameters: { type: "object", properties: { descricao: { type: "string" }, valor: { type: "number" } }, required: ["descricao", "valor"] } } },
             { type: "function", function: { name: "listar_despesas", description: "Lista todas as despesas financeiras atuais do usuário.", parameters: { type: "object", properties: {} } } },
-            { type: "function", function: { name: "consultar_clima", description: "Consulta a previsão do tempo atual via API aberta.", parameters: { type: "object", properties: {} } } }
+            { type: "function", function: { name: "consultar_clima", description: "Consulta a previsão do tempo atual via API aberta.", parameters: { type: "object", properties: {} } } },
+            { type: "function", function: { name: "criar_design_apple", description: "Cria uma especificação completa de interface seguindo o padrão Apple/HIG atual, com layout, componentes, acessibilidade, light/dark mode e movimento.", parameters: { type: "object", properties: { descricao: { type: "string", description: "Tela, sistema ou módulo que deve ser desenhado." }, plataforma: { type: "string", enum: ["web", "iOS", "iPadOS", "macOS", "visionOS"], description: "Plataforma alvo." } }, required: ["descricao"] } } }
         ];
 
         async function chamarMotorGroq(mensagemUsuario) {
@@ -235,6 +236,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             const resClima = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=-20.8489&longitude=-41.1128&current_weather=true`);
                             const dadosClima = await resClima.json();
                             resultadoAcao = `Clima: ${dadosClima.current_weather.temperature}°C`;
+                        }
+                        else if (nomeFuncao === "criar_design_apple") {
+                            if (!window.MotorAgente) {
+                                throw new Error("MOTOR_DESIGN_APPLE_INDISPONIVEL");
+                            }
+                            const projetoDesign = await window.MotorAgente.criarDesignApple(
+                                args.descricao,
+                                { platform: args.plataforma || "web" }
+                            );
+                            resultadoAcao = JSON.stringify(projetoDesign);
                         }
 
                         // Devolve a informação de volta para a IA ler
