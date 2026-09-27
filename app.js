@@ -168,7 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
             { type: "function", function: { name: "registrar_despesa", description: "Registra um gasto ou despesa.", parameters: { type: "object", properties: { descricao: { type: "string" }, valor: { type: "number" } }, required: ["descricao", "valor"] } } },
             { type: "function", function: { name: "listar_despesas", description: "Lista todas as despesas financeiras atuais do usuário.", parameters: { type: "object", properties: {} } } },
             { type: "function", function: { name: "consultar_clima", description: "Consulta a previsão do tempo atual via API aberta.", parameters: { type: "object", properties: {} } } },
-            { type: "function", function: { name: "criar_design_apple", description: "Cria uma especificação completa de interface seguindo o padrão Apple/HIG atual, com layout, componentes, acessibilidade, light/dark mode e movimento.", parameters: { type: "object", properties: { descricao: { type: "string", description: "Tela, sistema ou módulo que deve ser desenhado." }, plataforma: { type: "string", enum: ["web", "iOS", "iPadOS", "macOS", "visionOS"], description: "Plataforma alvo." } }, required: ["descricao"] } } }
+            { type: "function", function: { name: "criar_design_apple", description: "Cria uma especificação completa de interface seguindo o padrão Apple/HIG atual, com layout, componentes, acessibilidade, light/dark mode e movimento.", parameters: { type: "object", properties: { descricao: { type: "string", description: "Tela, sistema ou módulo que deve ser desenhado." }, plataforma: { type: "string", enum: ["web", "iOS", "iPadOS", "macOS", "visionOS"], description: "Plataforma alvo." } }, required: ["descricao"] } } },
+            { type: "function", function: { name: "consultar_biblioteca_apple", description: "Consulta a biblioteca de referência Apple atual do ATLAS para padrões de navegação, formulários, dashboards, Liquid Glass, acessibilidade e tokens.", parameters: { type: "object", properties: { topico: { type: "string", description: "Tema desejado, como dashboard, navigation, forms, liquid glass, accessibility ou tokens." } }, required: ["topico"] } } }
         ];
 
         async function chamarMotorGroq(mensagemUsuario) {
@@ -246,6 +247,13 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { platform: args.plataforma || "web" }
                             );
                             resultadoAcao = JSON.stringify(projetoDesign);
+                        }
+                        else if (nomeFuncao === "consultar_biblioteca_apple") {
+                            if (!window.MotorAgente) {
+                                throw new Error("BIBLIOTECA_DESIGN_APPLE_INDISPONIVEL");
+                            }
+                            const referenciaApple = await window.MotorAgente.consultarBibliotecaApple(args.topico);
+                            resultadoAcao = JSON.stringify(referenciaApple);
                         }
 
                         // Devolve a informação de volta para a IA ler
