@@ -1,0 +1,24 @@
+{
+  "category": "liquid-glass",
+  "purpose": "Criar uma camada funcional distinta para navegação e controles, preservando o conteúdo como foco principal.",
+  "recommendedFor": [
+    "toolbars",
+    "tab bars",
+    "sidebars",
+    "floating controls",
+    "navigation overlays"
+  ],
+  "avoidFor": [
+    "todo o fundo da aplicação sem necessidade",
+    "texto longo diretamente sobre fundo visualmente complexo",
+    "cartões aninhados repetidamente",
+    "grandes áreas de dados densos"
+  ],
+  "rules": [
+    "A transparência deve responder ao conteúdo por trás sem prejudicar legibilidade.",
+    "Use borda/edge sutil para separar vidro do conteúdo.",
+    "Quando Reduce Transparency estiver ativo, substitua transparência por superfície sólida.",
+    "Evite cor forte no material quando ela competir com o conteúdo.",
+    "Conteúdo pode se estender por baixo de barras e sidebars quando a leitura continuar clara."
+  ]
+}
