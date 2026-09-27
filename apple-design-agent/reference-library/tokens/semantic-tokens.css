@@ -1,0 +1,94 @@
+:root {
+  --atlas-apple-bg: #f5f5f7;
+  --atlas-apple-surface: #ffffff;
+  --atlas-apple-surface-elevated: rgba(255,255,255,.78);
+  --atlas-apple-text: #1d1d1f;
+  --atlas-apple-text-secondary: #6e6e73;
+  --atlas-apple-separator: rgba(60,60,67,.18);
+  --atlas-apple-accent: #007aff;
+  --atlas-apple-danger: #ff3b30;
+  --atlas-apple-success: #34c759;
+  --atlas-apple-warning: #ff9f0a;
+
+  --atlas-apple-space-1: 4px;
+  --atlas-apple-space-2: 8px;
+  --atlas-apple-space-3: 12px;
+  --atlas-apple-space-4: 16px;
+  --atlas-apple-space-5: 20px;
+  --atlas-apple-space-6: 24px;
+  --atlas-apple-space-8: 32px;
+  --atlas-apple-space-10: 40px;
+  --atlas-apple-space-12: 48px;
+
+  --atlas-apple-radius-compact: 8px;
+  --atlas-apple-radius-control: 12px;
+  --atlas-apple-radius-card: 18px;
+  --atlas-apple-radius-panel: 24px;
+  --atlas-apple-radius-pill: 999px;
+
+  --atlas-apple-control-min: 44px;
+  --atlas-apple-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+
+  --atlas-apple-glass-blur: 24px;
+  --atlas-apple-glass-saturation: 135%;
+  --atlas-apple-glass-edge: rgba(255,255,255,.42);
+
+  --atlas-apple-motion-fast: 140ms;
+  --atlas-apple-motion-normal: 220ms;
+  --atlas-apple-motion-deliberate: 320ms;
+  --atlas-apple-ease: cubic-bezier(.2,.8,.2,1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --atlas-apple-bg: #000;
+    --atlas-apple-surface: #1c1c1e;
+    --atlas-apple-surface-elevated: rgba(28,28,30,.76);
+    --atlas-apple-text: #f5f5f7;
+    --atlas-apple-text-secondary: #aeaeb2;
+    --atlas-apple-separator: rgba(235,235,245,.16);
+    --atlas-apple-accent: #0a84ff;
+    --atlas-apple-danger: #ff453a;
+    --atlas-apple-success: #30d158;
+    --atlas-apple-glass-edge: rgba(255,255,255,.16);
+  }
+}
+
+.atlas-apple-glass {
+  background: var(--atlas-apple-surface-elevated);
+  border: 1px solid var(--atlas-apple-glass-edge);
+  backdrop-filter: blur(var(--atlas-apple-glass-blur)) saturate(var(--atlas-apple-glass-saturation));
+  -webkit-backdrop-filter: blur(var(--atlas-apple-glass-blur)) saturate(var(--atlas-apple-glass-saturation));
+}
+
+.atlas-apple-control {
+  min-width: var(--atlas-apple-control-min);
+  min-height: var(--atlas-apple-control-min);
+  border-radius: var(--atlas-apple-radius-control);
+  transition:
+    transform var(--atlas-apple-motion-fast) var(--atlas-apple-ease),
+    opacity var(--atlas-apple-motion-fast) var(--atlas-apple-ease);
+}
+
+.atlas-apple-control:active { transform: scale(.98); }
+
+.atlas-apple-control:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--atlas-apple-accent) 36%, transparent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-apple-control,
+  .atlas-apple-glass {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .atlas-apple-glass {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--atlas-apple-surface);
+  }
+}
